@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Merienda:wght@700&family=Merriweather+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVP</title>
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+    
+    <!-- This code is to pop up the invitation letter when the button "click here" is pushed but when the button
+    is pushed, the invite does not appear so I have hidden the button and added a transition for the invite.
+    Also, when the RSVP is clicked, it should close the invite. The console on the wbesite shows what is to be printed
+    but the function still does not appear to be working -->
+
+    <div class="container">
+        <button type="submit" class="open" id="Click"> Click Here!</button>
+        <div class="popup" id="popup">
+            <div class="head">
+                YOU ARE INVITED!!!
+            </div>
+            <div class="honor">
+                HONORING
+            </div>
+            <div class="name">
+                Chichi
+            </div>
+            <div class="info">
+                As she celebrates her 21st birthday!!<br>
+                August 6th.<br>
+                Cabo San Lucas, New Mexico.
+            </div>
+            <div class="activity">
+                Drinks, Music, Games, Pranks and so much more
+            </div>
+            <button type="button"  id="close">RSVP</button>
+        </div>
+    </div>
+
+
+</body>
+</html>
