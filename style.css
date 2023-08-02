@@ -1,0 +1,119 @@
+/* FFC600 ~ Mikado Yellow 70, 135, 200
+FCF300 ~ Cadmium Yellow 252, 243, 0
+4687C8 ~ Steel Blue
+font-family: 'Cookie', cursive; */
+
+
+html{
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+body{
+    background-image: url("back.jpg");
+    
+}
+
+
+div.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+
+}
+
+.open{
+   margin-top: 40%;
+    padding: 10px 60px;
+    background-color: rgba(255, 198, 0, 0.9);
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+    
+}
+
+div.popup{
+    background-color: rgba(255, 198, 0, 0.7);
+    opacity: 3px;
+    text-align: center;
+    width: 60%;
+    height: fit-content;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+    /* visibility: visible; */
+    transition: transform 0.9s, top 0.9s;
+}
+
+#Click{
+    /* visibility: hidden; button is hidden as a result of the function not working */
+    visibility: hidden;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+div.head{
+    border-top: 10%;
+    font-family: 'Merienda', cursive;
+    font-size: 60px;
+    color: whitesmoke;
+    font-weight: bolder;
+    text-align: center;
+    
+}
+div.honor{
+    padding-top: 40px;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+}
+div.name{
+    font-family: 'Cookie', cursive;
+    font-size: 90px;
+    color: #4687C8;
+   padding-top: 10px;
+}
+div.info{
+    font-size: 30px;
+    height: fit-content;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+div.activity{
+    padding-top: 40px;
+    font-family: 'Cookie', cursive;
+    font-size: 30px;
+}
+.popup button{
+    width: 50%;
+    font-weight: bold;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: whitesmoke;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(255, 198, 0, 0.7);
+}
+
+@media screen and (max-height: 667px) {
+div.popup{
+    width: 80%;
+    height: fit-content;
+    margin-top: 60px;
+}
+    
+}
